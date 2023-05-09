@@ -36,7 +36,7 @@ if __name__ == "__main__":
     #################################################
     # PARAMETER DEFINITION ##########################
     # Define path for data input ####################
-    excelfile = 'input/DataForCTCalibration_PhilipsCT7500_Mono70keV.xlsx'
+    excelfile = 'input/DataForCTCalibration_Siemens_goOpenPro_120kVp.xlsx'
     E_prot = 100  # proton beam energy in MeV
     ##############################################################
     ##############################################################
