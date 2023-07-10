@@ -165,8 +165,8 @@ def plot_hlut(datasheet, hluttype):
         axins.set_xlim(-200, 200)
         axins.set_ylim(0.8, 1.2)
         ax.indicate_inset_zoom(axins, edgecolor="black")
-        plt.savefig("results/for_report/svg/hlut_{}.svg".format(i))
-        plt.savefig('results/HLUT_{}.pdf'.format(i), bbox_inches="tight", dpi=300)
+        plt.savefig("Results/for_report/svg/hlut_{}.svg".format(i))
+        plt.savefig('Results/HLUT_{}.pdf'.format(i), bbox_inches="tight", dpi=300)
         
         
 def evaluation_steps(datasheet):
@@ -239,8 +239,8 @@ def evaluation_steps(datasheet):
     axs[2].set_ylabel('Mean excitation energy (eV)')    
     axs[2].grid(alpha=alphavalue)
     
-    plt.savefig("results/for_report/svg/Eval_box_2_tissue_equivalence.svg", bbox_inches="tight")
-    plt.savefig('results/for_report/Eval_box_2_tissue_equivalence.pdf', bbox_inches="tight", dpi=300)
+    plt.savefig("Results/for_report/svg/Eval_box_2_tissue_equivalence.svg", bbox_inches="tight")
+    plt.savefig('Results/for_report/Eval_box_2_tissue_equivalence.pdf', bbox_inches="tight", dpi=300)
 
     # Evaluation box 3: CT number estimation
     for i in ['head', 'body']:
@@ -282,8 +282,8 @@ def evaluation_steps(datasheet):
     ax.set_title('Check of estimated CT numbers')    
     plt.legend()
 
-    plt.savefig("results/for_report/svg/Eval_box_3_ctnumber_estimation.svg", bbox_inches="tight")
-    plt.savefig('results/for_report/Eval_box_3_ctnumber_estimation.pdf', bbox_inches="tight", dpi=300)
+    plt.savefig("Results/for_report/svg/Eval_box_3_ctnumber_estimation.svg", bbox_inches="tight")
+    plt.savefig('Results/for_report/Eval_box_3_ctnumber_estimation.pdf', bbox_inches="tight", dpi=300)
 
     # Evaluation box 4: SPR calculation
     filename = 'Eval_box_4_spr_estimation'
@@ -318,8 +318,8 @@ def evaluation_steps(datasheet):
         axx.set_title('Comparison measured vs calculated SPR')    
         plt.legend()
         
-        plt.savefig("results/for_report/svg/{}.svg".format(filename))
-        plt.savefig('results/for_report/{}.pdf'.format(filename), bbox_inches="tight", dpi=300)
+        plt.savefig("Results/for_report/svg/{}.svg".format(filename))
+        plt.savefig('Results/for_report/{}.pdf'.format(filename), bbox_inches="tight", dpi=300)
 
     # Evaluation box 5: Need for additional HLUT
     fig6, ax6 = plt.subplots(2, figsize=(10, 10))
@@ -368,8 +368,8 @@ def evaluation_steps(datasheet):
     ax6[1].set_xlim([-1024, np.max(datasheet['CTnumbers']['CT number (Head)']) + 100])
     ax6[1].legend()
 
-    plt.savefig("results/for_report/svg/Eval_box_5_hlut_comp.svg")
-    plt.savefig('results/for_report/Eval_box_5_hlut_comp.pdf', bbox_inches="tight", dpi=300)
+    plt.savefig("Results/for_report/svg/Eval_box_5_hlut_comp.svg")
+    plt.savefig('Results/for_report/Eval_box_5_hlut_comp.pdf', bbox_inches="tight", dpi=300)
 
     # Evaluation of position dependency of CT numbers
     datasheet['CTnumbers']['CT number (eval - body)'] = (
@@ -543,8 +543,6 @@ def evaluation_steps(datasheet):
     colors = ['royalblue', 'powderblue', 'seagreen', 'yellowgreen']
     ax_1.axhline(0, color='black')
     
-    print('AAAAAAAAAAAAA')
-    print(len(spr_meas_lung))
     if len(spr_meas_lung) < 5:
         # Plot long datapoints individually
         ax_1.plot(xpos[0]*np.ones(len(spr_meas_lung)), 100*np.subtract(
@@ -603,8 +601,8 @@ def evaluation_steps(datasheet):
                     rotation=0, horizontalalignment='center')
     ax_1.legend()
 
-    plt.savefig("results/for_report/svg/{}.svg".format('Eval_endtoend_hlut_accuracy'))
-    plt.savefig('results/for_report/{}.pdf'.format('Eval_endtoend_hlut_accuracy'), bbox_inches="tight", dpi=300)
+    plt.savefig("Results/for_report/svg/{}.svg".format('Eval_endtoend_hlut_accuracy'))
+    plt.savefig('Results/for_report/{}.pdf'.format('Eval_endtoend_hlut_accuracy'), bbox_inches="tight", dpi=300)
     
 
 

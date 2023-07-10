@@ -224,7 +224,7 @@ def rep_main(excelfile, sprtype):
     pdf.drawText(t)
 
     # Print image (avgd HLUT)
-    drawing = svg2rlg("Results/for_report/svg/HLUT_avgdCT.svg")
+    drawing = svg2rlg("Results/for_report/svg/hlut_avgdCT.svg")
     drawing = scale(drawing, 0.60)
     renderPDF.draw(drawing, pdf, 30, 200)       
     
@@ -454,7 +454,7 @@ def rep_main(excelfile, sprtype):
     pdf.drawText(t) 
 
     # Print image (HLUT comparison)
-    drawing = svg2rlg("Results/for_report/svg/Eval_endtoend_HLUT_accuracy.svg")
+    drawing = svg2rlg("Results/for_report/svg/Eval_endtoend_hlut_accuracy.svg")
     drawing = scale(drawing, 0.60)
     renderPDF.draw(drawing, pdf, 30, 475) 
 
