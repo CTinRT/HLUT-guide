@@ -41,7 +41,7 @@ format compact; format shortG;
 %Input folder name:
 Input_Folder_Name='Input_folder';
 %File name - for Excel file with CT numbers and phantom data:
-File_name='DataForCTCalibration_PhilipsCT7500_Mono70keV.xlsx';
+File_name='DataForCTCalibration_Philips_CT7500_Mono70keV.xlsx';
 
 %Folder name to save the results to (either relative or absolute path):
 Output_Folder_Name='Results';
