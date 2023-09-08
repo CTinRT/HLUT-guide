@@ -67,8 +67,9 @@ def rep_main(excelfile, sprtype):
     pdf.setTitle("HLUT evaluation")
     
     # registering an external font in python
-    pdfmetrics.registerFont(TTFont('abc', 'times.ttf'))
-    pdfmetrics.registerFont(TTFont('abc_b', 'timesbd.ttf'))
+    # pdfmetrics.registerFont(TTFont('abc', 'times.ttf'))
+    pdfmetrics.registerFont(TTFont('abc', 'Vera.ttf'))
+    pdfmetrics.registerFont(TTFont('abc_b', 'VeraBd.ttf'))
 
     #
     # PAGE 1

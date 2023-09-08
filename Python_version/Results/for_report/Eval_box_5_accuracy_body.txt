@@ -1,0 +1,4 @@
+Metric    All tissues    Lung    Adipose    Soft tissue    Bone
+Mean error (%)    -0.12    0.24    -0.63    -0.03    0.13
+Mean absolute error (%)    0.57    1.26    0.94    0.28    0.7
+RMSE (%)    0.82    1.56    1.2    0.35    0.84

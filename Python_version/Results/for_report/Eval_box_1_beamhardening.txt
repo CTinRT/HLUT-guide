@@ -1,0 +1,13 @@
+Insert name    CT number head    CT number body    Difference
+Lung LN300    -712    -705    -7 
+Lung LN450    -520    -512    -8 
+HE General Adipose    -69    -65    -3 
+HE Breast 50:50    -43    -40    -3 
+Liquid Water    3    1    2 
+HE CT Solid water    6    2    4 
+HE Brain    40    35    6 
+HE Liver    62    57    6 
+HE Inner Bone    330    322    8 
+CaCO3 30%    496    492    4 
+CaCO3 50%    921    902    19 
+HE Cortical Bone    1560    1524    36 
