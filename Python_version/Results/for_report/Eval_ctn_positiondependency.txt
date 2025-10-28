@@ -1,5 +1,0 @@
-Insert name    CTN middle (HU)    CTN outer (HU)    Difference (HU) 
-HE Inner Bone    322    304    18
-CaCO3 30%    492    466    26
-CaCO3 50%    902    857    45
-HE Cortical Bone    1524    1459    65
