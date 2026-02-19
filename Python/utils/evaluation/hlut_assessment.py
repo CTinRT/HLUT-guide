@@ -159,7 +159,10 @@ def main(datasheet, recon_type):
     ax6[1].plot(xlist, 100 * (y_value_average - y_value_average), '-', color='black', linewidth=0.5)
 
     ax6[1].set_title('Difference of HLUTs: size-specific - averaged CT numbers')
-    ax6[1].set_xlabel('CT numbers (HU)')
+    if recon_type == 'regular':
+        ax6[1].set_xlabel('CT numbers (HU)')
+    elif recon_type == 'DD':
+        ax6[1].set_xlabel('DD CT numbers (HU)')
     ax6[1].set_ylabel(rf'$\Delta$ {y_axis} in %')
 
     ax6[1].yaxis.grid(which='major', color='gray', linestyle='-', alpha=0.3)  # vertical lines (major)
