@@ -249,6 +249,7 @@ plot([-1024,max_CTnumber],[0,0],'k')
 %Set y-axis limit:
 ymin=floor(min([diff_Head_Average,diff_Body_Average])*10)/10;
 ymax=ceil(max([diff_Head_Average,diff_Body_Average])*10)/10;
+if ymin==0 && ymax==0, ymin=-0.1; ymax=0.1; end
 ylim([ymin,ymax])
 %Plot vertical line at CTN_bone:
 plot([CTN_bone,CTN_bone],[ymin,ymax],'Color',lcolor,'LineStyle','-.')
