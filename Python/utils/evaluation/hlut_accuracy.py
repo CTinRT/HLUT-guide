@@ -170,7 +170,7 @@ def main(datasheet):
     rmse_body_bone = round(100.0 *np.sqrt(mean_squared_error(par_cal_body_bone, par_meas_bone)), roundto)
     rmse_body_all = round(100.0 *np.sqrt(mean_squared_error(par_cal_body_all, par_meas_all)), roundto)
 
-    with open('{}/for_report/Eval_box_5_accuracy_head.txt'.format(datasheet['output']), 'w') as f:
+    with open('{}/for_report/Eval_box_6_accuracy_head.txt'.format(datasheet['output']), 'w') as f:
         f.write('Metric    All tissues    Lung    Adipose    Soft tissue    Bone\n')
         f.write('Mean error (%)    {}    {}    {}    {}    {}\n'.format(
             me_head_all, me_head_lung, me_head_fat, me_head_soft, me_head_bone))
@@ -179,7 +179,7 @@ def main(datasheet):
         f.write('RMSE (%)    {}    {}    {}    {}    {}\n'.format(
             rmse_head_all, rmse_head_lung, rmse_head_fat, rmse_head_soft, rmse_head_bone))
 
-    with open('{}/for_report/Eval_box_5_accuracy_body.txt'.format(datasheet['output']), 'w') as f:
+    with open('{}/for_report/Eval_box_6_accuracy_body.txt'.format(datasheet['output']), 'w') as f:
         f.write('Metric    All tissues    Lung    Adipose    Soft tissue    Bone\n')
         f.write('Mean error (%)    {}    {}    {}    {}    {}\n'.format(
             me_body_all, me_body_lung, me_body_fat, me_body_soft, me_body_bone))
